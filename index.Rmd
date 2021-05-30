@@ -1,0 +1,31 @@
+---
+title: "Racial Bechdel Test of Late Night Talk Show"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+source("analysis.R")
+```
+
+### Introduction
+Throughout our lesson on _communication is mediated_, we examined how some stereotypes are structuralized in the entertainment media. On this project, we aim to seek out for racial inequalities in TV shows, especially **Late Night Talk Show**. We looked through top 15 Late Night Talk Show rated by ["ranker.com"](https://www.ranker.com/list/best-current-late-night-shows/ranker-tv), and proceeded to examine each shows meticulously, looking through various clips from _Youtube_ and examined how the host talked, deciding if these shows passed our tests. 
+
+_Our Bechdel Test look for_: 
+
+1. Does the show has or had the host who is people of color?
+
+2. Does the host have accent that is not _standard_ White accent?
+
+### Result of the Findings
+This table shows the result of the findings: 
+```{r echo= F}
+kable(ranking, col.names = c("Top 15 Late Night Shows", "First Test", "Second Test"))
+```
+There were only **2** shows which have passed the first test, and only **4** shows which have passed the second test. Only **2** shows passed the both of the test, and **13** shows have failed to do so. The graph of these test results are shown through the bar graphs below. 
+
+```{r echo= F}
+plot_test
+```
+
+Sadly, it is quite clear that there are still racial inequalities and stereotypes in _Late Night Talk Shows_, where most of the hosts are composed of and expected to be _White_ people, rather than people of color.
